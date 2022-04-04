@@ -18,12 +18,15 @@ The purpose of this analysis is to use R to perform statistical analysis on a da
 ![Linear Regression](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/Del_1.png)
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
+
 From the table, the intercept, vehicle length, and ground clearance are unlikely to cause random variance (and thus provide non-random variance) due to their p-values of 5.08e-08, 2.60e-12, and 5.21e-08 respectively.
 
 **Is the slope of the linear model considered to be zero? Why or why not?**
+
 No, the slope of the linear model is not considered to be zero, due to the p value of 5.35e-11. this is below the significance level of 0.05, and thus rejects the null hypothesis of the slope being zero.
 
 **Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
+
 Yes, as the r-squared value is 0.7149, indicating a decent fit to the data, and the p-value is significant, indicating a non-zero slope and thus a correlation.
 
 ### Summary Statistics on Suspension Coils
