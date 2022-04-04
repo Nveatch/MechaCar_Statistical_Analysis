@@ -15,7 +15,7 @@ The purpose of this analysis is to use R to perform statistical analysis on a da
 
 ## Results
 ### Linear Regression to Predict MPG
-![Linear Regression](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/resources/del_1.png)
+![Linear Regression](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/del_1.png)
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 From the table, the intercept, vehicle length, and ground clearance are unlikely to cause random variance (and thus provide non-random variance) due to their p-values of 5.08e-08, 2.60e-12, and 5.21e-08 respectively.
@@ -28,11 +28,11 @@ Yes, as the r-squared value is 0.7149, indicating a decent fit to the data, and 
 
 ### Summary Statistics on Suspension Coils
 **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
-![Total Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/resources/del_2_total_summary.png)
+![Total Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/del_2_total_summary.png)
 
 As shown in the above dataframe, the variance for all lots in total is 62.29356, and thus does meet the design specification of not exceed a variance of 100 pounds per square inch.
 
-![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/resources/del_2_lot_summary.png)
+![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/del_2_lot_summary.png)
 
 However, as shown in this individual lot summary, lot 3 by itself has a variance of 170.2861224, which does not meet the specification. Lots 1 and 2 do meet the specification though (variances of 0.9795918 and 7.4693878 respectively). 
 
@@ -40,12 +40,12 @@ However, as shown in this individual lot summary, lot 3 by itself has a variance
 Our goal with these t-tests is to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 **Total of all Lots**
-![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/resources/del_3_all_lots.png)
+![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/del_3_all_lots.png)
 
 The P-value is 0.06028, outside out significance level of 0.05, so we fail to reject the null hypothesis (there could or could not be a statistical difference)
 
 **Each Lot Separately**
-![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/resources/del_3_each_lot.png)
+![Lot Summary](https://github.com/Nveatch/MechaCar_Statistical_Analysis/blob/main/Resources/del_3_each_lot.png)
 
 * Lot 1 (in red) has a p-value of 1, outside out significance level of 0.05, so we fail to reject the null hypothesis (there could or could not be a statistical difference)
 
